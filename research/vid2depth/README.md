@@ -1,6 +1,3 @@
-![TensorFlow Requirement: 1.x](https://img.shields.io/badge/TensorFlow%20Requirement-1.x-brightgreen)
-![TensorFlow 2 Not Supported](https://img.shields.io/badge/TensorFlow%202%20Not%20Supported-%E2%9C%95-red.svg)
-
 # vid2depth
 
 **Unsupervised Learning of Depth and Ego-Motion from Monocular Video Using 3D Geometric Constraints**
@@ -53,7 +50,7 @@ git clone --depth 1 https://github.com/tensorflow/models.git
 ```shell
 mkdir -p ~/vid2depth/kitti-raw-uncompressed
 cd ~/vid2depth/kitti-raw-uncompressed
-wget https://raw.githubusercontent.com/mrharicot/monodepth/master/utils/kitti_archives_to_download.txt
+wget https://github.com/mrharicot/monodepth/blob/master/utils/kitti_archives_to_download.txt
 wget -i kitti_archives_to_download.txt
 unzip "*.zip"
 ```
@@ -92,7 +89,7 @@ cd tensorflow/models/research/vid2depth
 python inference.py \
   --kitti_dir ~/vid2depth/kitti-raw-uncompressed \
   --output_dir ~/vid2depth/inference \
-  --kitti_video 2011_09_26/2011_09_26_drive_0009_sync \
+  --video 2011_09_26/2011_09_26_drive_0009_sync \
   --model_ckpt ~/vid2depth/trained-model/model-119496
 ```
 

@@ -72,9 +72,6 @@ target/
 # pyenv
 .python-version
 
-# mypy
-.mypy_cache
-
 # celery beat schedule file
 celerybeat-schedule
 
@@ -96,3 +93,5 @@ ENV/
 
 # For mac
 .DS_Store
+
+samples/outreach/blogs/segmentation_blogpost/carvana-image-masking-challenge/
